@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Firebase</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h2 class="header">List of Books</h2>
+    <ul class="ul">
+    </ul>
+
+    <form class="add">
+      <label for="title">Title:</label>
+      <input type="text" name="title" placeholder="Title" required />
+      <label for="author">Author:</label>
+      <input type="text" name="author" placeholder="Author" required />
+
+      <button class="add-new-book">Add new book</button>
+    </form>
+
+    <form class="delete">
+      <label for="delete">Document id:</label>
+      <input type="text" name="delete" placeholder="ID" required />
+
+      <button>delete a book</button>
+    </form>
+
+    <form class="update">
+      <label for="update">Document id:</label>
+      <input type="text" name="update" placeholder="ID" required />
+      <label for="update-title">Title:</label>
+      <input type="text" name="updateTitle" placeholder="Title" required />
+      <label for="update-author">Author:</label>
+      <input type="text" name="updateAuthor" placeholder="Author" required />
+
+      <button>update a book</button>
+    </form>
+
+    <h2 class="auth">Authentication</h2>
+
+    <form class="signup">
+      <h3 class="form-header">Sign Up</h3>
+      <h3 class="form-header-2"></h3>
+      <label for="email">email:</label>
+      <input type="email" name="email" placeholder="email"/>
+      <label for="password">password:</label>
+      <input type="password" name="password" placeholder="password"/>
+      <button>signup</button>
+    </form>
+
+    <form class="login">
+      <h3 class="form-header">Log In</h3>
+      <h3 class="form-header-2"></h3>
+      <label for="email">email:</label>
+      <input type="email" name="email" placeholder="email" />
+      <label for="password">password:</label>
+      <input type="password" name="password" placeholder="password"/>
+      <button>login</button>
+    </form>
+
+    <button class="logout">logout</button>
+
+    
+  <!-- <h2>Unsubscribing</h2>
+  <button class="unsub">unsubscribe from db/auth changes</button>
+   -->
+
+    <script src="bundle.js"></script>
+  </body>
+</html>

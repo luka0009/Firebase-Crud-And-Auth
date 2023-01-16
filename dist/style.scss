@@ -1,0 +1,107 @@
+body {
+    // background-color: #167db5;
+    // background-color: darkolivegreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        padding: 20px;
+        margin: 20px;
+        background-color: #09b4bd;
+        background-color: #e87474;
+        color: deeppink;
+
+        label {
+            color: white;
+            font-weight: 700;
+            color: white;
+        }
+
+        input {
+            padding: 5px 10px;
+            color: salmon;
+            font-weight: 900;
+            background-color: darkolivegreen;
+            margin: 10px;
+            border: none;
+            border-bottom: 7px solid slateblue;
+            outline: none;
+
+            &::placeholder {
+                color: salmon;
+                font-weight: 900;
+            }
+
+            &:focus {
+                transform: scale(1.2);
+            }
+        }
+
+        button {
+            background-color: #161a91;
+            color: wheat;
+            margin-top: 15px;
+            padding: 5px 0px;
+            cursor: pointer;
+        }
+    }
+
+
+}
+
+button {
+    background-color: #161a91;
+    color: wheat;
+    margin-top: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.logout {
+    background-color: #161a91;
+    color: wheat;
+    margin-top: 15px;
+    padding: 5px 55px;
+    cursor: pointer;
+}
+
+.delete-button, .update-button {
+    padding: 5px 10px;
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+.ul {
+    position: relative;
+    min-width: 800px;
+    min-height: 300px;
+    width: fit-content;
+    height: fit-content;
+    // border: 2px solid black;
+    list-style: lower-greek;
+
+    li {
+        margin: 30px;
+        display: flex;
+        align-items: baseline;
+        list-style:lower-greek;
+    }
+
+    .delete-button {
+        position: absolute;
+        right: 150px;
+        margin-right: 0;
+        margin-left: 15px;
+    }
+
+    .update-button {
+        position: absolute;
+        right: 50px;
+        margin-left: 10px;
+    }
+}
