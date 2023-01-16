@@ -270,7 +270,7 @@ logInForm.addEventListener('submit', (event) => {
 
 // subscribing to auth changes
 const logoutButton = document.querySelector('.logout');
-const unSubAuth = onAuthStateChanged(auth, (user) => {
+onAuthStateChanged(auth, (user) => {
     console.log('user status changed: ', user);
     if (user) {
         // User is signed in.
@@ -299,13 +299,4 @@ const unSubAuth = onAuthStateChanged(auth, (user) => {
       }
 })
 
-// unsubscribing from changes
-
-const unSubButton = document.querySelector('.unsub');
-unSubButton.addEventListener('click', () => {
-    console.log('unsubscribing');
-    unSubCol();
-    unSubDoc();
-    unSubAuth();
-})
 
